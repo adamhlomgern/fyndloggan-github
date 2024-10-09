@@ -23,20 +23,69 @@ function ShowHide(x) {
 }
 
 
-document.getElementById('category-filter').addEventListener('change', function () {
-    const selectedCategory = this.value;
+function filterPosts() {
+    const selectedCategory = document.getElementById('category-filter').value;
     const blogCards = document.querySelectorAll('.blog-card');
 
     blogCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        
-        if (selectedCategory === 'all' || cardCategory === selectedCategory) {
-            card.style.display = 'block'; // Visa inlägg om kategorin matchar
+        const category = card.getAttribute('data-category');
+
+        if (selectedCategory === 'all' || category === selectedCategory) {
+            card.style.display = 'block';
         } else {
-            card.style.display = 'none'; // Dölj inlägg om kategorin inte matchar
+            card.style.display = 'none';
         }
     });
-});
+}
+
+
+
+
+let currentPage = 1;
+const articlesPerPage = 6;
+
+function displayArticles() {
+    const articles = document.querySelectorAll('.blog-card');
+    const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+    // Göm alla artiklar först
+    articles.forEach(article => article.style.display = 'none');
+
+    // Visa endast artiklar för aktuell sida
+    const startIndex = (currentPage - 1) * articlesPerPage;
+    const endIndex = startIndex + articlesPerPage;
+    for (let i = startIndex; i < endIndex && i < articles.length; i++) {
+        articles[i].style.display = 'block';
+    }
+
+    // Uppdatera sidnumrering
+    document.getElementById('pageNumbers').textContent = ` ${currentPage} / ${totalPages} `;
+
+    // Hantera knapparnas status
+    document.getElementById('prevPage').disabled = currentPage === 1;
+    document.getElementById('nextPage').disabled = currentPage === totalPages;
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        displayArticles();
+    }
+}
+
+function nextPage() {
+    const totalPages = Math.ceil(document.querySelectorAll('.blog-card').length / articlesPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        displayArticles();
+    }
+}
+
+// Kör funktionen vid sidladdning
+window.onload = function() {
+    displayArticles();
+};
+
 
 
 

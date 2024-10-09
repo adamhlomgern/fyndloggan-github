@@ -75,6 +75,16 @@
     </section>
 
 
+    <div class="filter">
+      <p>Filtrera på kategori</p>
+      <select id="category-filter" onchange="filterPosts()">
+          <option value="all">Alla</option>
+          <option value="design">Design</option>
+          <option value="seo">SEO</option>
+          <option value="webbutveckling">Webbutveckling</option>
+      </select>
+  </div>
+  
 
 
 <div class="blog-container">
@@ -121,6 +131,14 @@
 
     <!-- Lägg till fler blogginlägg här -->
 </div>
+
+
+<div class="pagination">
+  <button id="prevPage" onclick="prevPage()">« Föregående</button>
+  <span id="pageNumbers"></span>
+  <button id="nextPage" onclick="nextPage()">Nästa »</button>
+</div>
+
 
 
 

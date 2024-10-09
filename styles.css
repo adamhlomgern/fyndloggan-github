@@ -813,19 +813,38 @@ h2 {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.filter p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
 #category-filter {
     padding: 10px;
     font-size: 16px;
     margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 0px;
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+}
+
+#category-filter:hover {
+    background-color: #e6e6e6; /* Gör den något mörkare vid hover */
 }
 
 .blog-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 40px;
+    padding: 10px 40px;
 
 }
 
@@ -891,6 +910,34 @@ h2 {
 .read-more:hover {
     background-color: #d55d5e;
 }
+
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f26b6c; /* Samma lila färg som tidigare */
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 130px;
+    margin-bottom: 40px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #d55d5e; /* Mörkare hover-effekt */
+}
+
 
 @media (max-width: 768px) {
     .blog-card {
