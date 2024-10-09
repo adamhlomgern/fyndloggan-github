@@ -69,7 +69,7 @@
     <!--HERO SEKTION-->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="h1-hero">Fyndloggan Academy</h1>
+            <h1 class="h1-hero-blog">Fyndloggan Academy</h1>
             <h2>Fyndloggan Academy erbjuder tips, guider och insikter inom logotyper, branding och webbdesign. Vi hjälper företag och kreatörer att bygga starka varumärken med praktiska råd och de senaste trenderna. Oavsett om du är nybörjare eller erfaren, har vi verktygen för att stärka din visuella identitet.</h2>
         </div>
     </section>
@@ -88,6 +88,15 @@
 
 
 <div class="blog-container">
+  <div class="blog-card" data-category="webbutveckling">
+    <img src="/bilder/blogg-thumbnails/computer-thumbnail.jpg" alt="dator med programmering">
+    <span class="category">Webbutveckling</span>
+    <h2>Så här snabbar du upp din webbplats: 10 praktiska tips</h2>
+    <p>En snabb webbplats är avgörande för att både förbättra användarupplevelsen och din SEO-ranking. Här är 10 enkla men effektiva tips!</p>
+    <a href="/blogginlägg/vektorisering-logga.html" class="read-more">Läs mer</a>
+</div>
+
+
     <div class="blog-card" data-category="design">
         <img src="/bilder/blogg-thumbnails/ai.jpg" alt="3D-rendering av adobe illustrator logga">
         <span class="category">Design</span>
@@ -134,9 +143,9 @@
 
 
 <div class="pagination">
-  <button id="prevPage" onclick="prevPage()">« Föregående</button>
+  <button id="prevPage" onclick="prevPage()">«</button>
   <span id="pageNumbers"></span>
-  <button id="nextPage" onclick="nextPage()">Nästa »</button>
+  <button id="nextPage" onclick="nextPage()">»</button>
 </div>
 
 
@@ -182,5 +191,6 @@
     <script src="script.js"></script>
 
 </div>
+<script src="/script.js"></script>
 </body>
 </html>

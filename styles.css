@@ -283,6 +283,14 @@ h2 {
     transform: translateY(-3px);
 }
 
+@media (max-width: 750px) {
+    .h1-hero {
+        font-size: 40px;
+
+    }
+}
+
+
 
 /* Pris & Kvalitet Sektion */
 .quality-section {
@@ -809,9 +817,10 @@ h2 {
     text-align: center;
 }
 
+
 .filter {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 40px;
     display: flex;
     justify-content: center;
@@ -828,6 +837,7 @@ h2 {
     padding: 10px;
     font-size: 16px;
     margin-left: 20px;
+    margin-right: 10px;
     border-radius: 10px;
     cursor: pointer;
     width: 200px;
@@ -918,14 +928,14 @@ h2 {
 }
 
 .pagination button {
-    padding: 10px 15px;
+    padding: 5px 10px;
     margin: 0 5px;
     background-color: #f26b6c; /* Samma lila färg som tidigare */
     color: white;
     border: none;
     border-radius: 35px;
     cursor: pointer;
-    width: 130px;
+    width: 35px;
     margin-bottom: 40px;
 }
 
@@ -1017,6 +1027,9 @@ h2 {
     line-height: 1.8;
 }
 
+.post-content h3 {
+    margin-top: 40px;
+}
 
 @media (max-width: 550px) {
     .post-title {
@@ -1024,6 +1037,11 @@ h2 {
     }
 }
 
+@media (max-width: 789px) {
+    .h1-hero-blog {
+        font-size: 38px;
+    }
+}
 
 
 
