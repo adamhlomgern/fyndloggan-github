@@ -1252,19 +1252,19 @@ body {
 
   
 /* Länkstil */
-a {
+.left-section a {
     color: #f26b6c; /* Korallfärgen du använder */
     text-decoration: none; /* Tar bort understrykningen */
     font-weight: bold; /* Gör texten fet */
     margin-top: 5px;
 }
 
-/* Hover-effekt */
+
 
 
 
   /* För större skärmar */
-  @media (min-width: 768px) {
+  @media (min-width: 853px) {
     .contact-section {
       flex-direction: row;
       justify-content: center;
@@ -1285,7 +1285,7 @@ a {
   
 
   /* Anpassa för små skärmar */
-@media (max-width: 767px) {
+@media (max-width: 852px) {
     .contact-section {
       padding: 20px;
     }
