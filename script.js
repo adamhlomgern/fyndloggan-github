@@ -89,7 +89,6 @@ window.onload = function() {
 
 
 
-
 // Cookie Consent by TermsFeed
 document.addEventListener('DOMContentLoaded', function () {
     cookieconsent.run({
