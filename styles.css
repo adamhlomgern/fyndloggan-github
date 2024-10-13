@@ -765,6 +765,196 @@ h2 {
 
 
 
+  /* Hero section styling */
+.hero-kundcase {
+    background-color: #f9f9f9;
+    padding: 100px 20px;
+    text-align: left;
+    background-image: url('/bilder/hero-img-2.png'); /* Lägg till en bakgrund om du vill */
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    height: auto;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: left
+}
+
+.case-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-kundcase h1 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-kundcase p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.case-cta-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 36px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.case-cta-button:hover {
+    background-color: #e64c3c;
+}
+
+/* Kundcase section styling */
+.kundcase-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 20px 50px;
+}
+
+.kundcase-section h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.case-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.project-overview, .my-contributions {
+    flex: 1;
+}
+
+.project-overview h2, .my-contributions h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-overview p, .my-contributions p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.case-image {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.case-image img {
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.info-title h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.info-description p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    max-width: auto;
+}
+
+.cta-kundcase {
+
+    background-color: #f9f9f9; /* Ljus bakgrundsfärg för kontrast */
+    padding: 60px 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lätt skugga för att lyfta sektionen */
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.cta-kundcase h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333; /* Mörk text för rubriken */
+    margin-bottom: 20px;
+}
+
+.cta-kundcase p {
+    font-size: 18px;
+    color: #666; /* Mörkare grå färg för texten */
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Centrera och ge utrymme under texten */
+}
+
+
+
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .case-content {
+        flex-direction: column;
+    }
+    .hero-kundcase h1 {
+        font-size: 32px;
+    }
+    .kundcase-section {
+        margin: 10px;
+    }
+    .info-content {
+        flex-direction: column;
+    }
+    .case-image {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
 
 
 
