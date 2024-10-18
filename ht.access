@@ -5,3 +5,5 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 <IfModule mod_headers.c>
     Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 </IfModule>
+
+ErrorDocument 404 /404.html
