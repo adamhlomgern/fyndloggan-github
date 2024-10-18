@@ -23,18 +23,18 @@ body {
 /* TOP-BANNER STYLING */
 .top-banner {
     background-color: #f26b6c;
-    color: whitesmoke;
+    color: #1F3A3A;
     text-align: left;
     padding: 3px;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 500;
     padding-left: 20px;
 }
 
 
 /* Styling för header */
 header {
-    background-color: #1f3a3a;
+    background-color: #1F3A3A;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -176,7 +176,7 @@ nav {
       }
       
       #Menu {
-        background-color: #1f3a3a;
+        background-color: #1F3A3A;
 
         text-align: left;
       }
@@ -215,7 +215,9 @@ nav {
     }
 }
 
-
+strong {
+    font-weight: 900;
+}
 
 
 /* Hero sektion */
@@ -245,13 +247,13 @@ nav {
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 60px;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
     margin: 0;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #1f3a3a    ;
+    color: #1F3A3A    ;
 }
 
 h2 {
@@ -306,7 +308,7 @@ h2 {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 40px;
-    color: #1f3a3a;
+    color: #1F3A3A;
 }
 
 .quality-container {
@@ -417,7 +419,7 @@ h2 {
 .testimonials h2 {
     font-size: 36px;
     font-weight: 900;
-    color: #1f3a3a;
+    color: #1f2b2d;
     margin-bottom: 60px;
     text-align: center;
     margin-top: 110px;
@@ -486,7 +488,7 @@ h2 {
 
 
 .cta-section {
-    background-color: #1f3a3a; /* Grön bakgrundsfärg */
+    background-color: #1F3A3A; /* Grön bakgrundsfärg */
     padding: 80px 40px;
     text-align: center;
 }
@@ -669,7 +671,7 @@ h2 {
 
 /* Footer styling */
 .footer {
-    background-color: #1f3a3a;
+    background-color: #1F3A3A;
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -970,7 +972,7 @@ h2 {
 }
 
 .about-section h1 {
-    color: #1f3a3a;
+    color: #1F3A3A;
 }
 
 .about-section h2 {
