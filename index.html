@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://fyndloggan.se/">
     <meta property="og:url" content="https://fyndloggan.se">
     <meta property="og:type" content="website">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Fyndloggan - Logotypdesign, Branding och Webbdesign</title>
     <link rel="stylesheet" href="https://use.typekit.net/uok5gbr.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -320,7 +320,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
     </section>
 
 
-
+<!--
     <section class="article-carousel" id="article-carousel">
         <h2 class="section-heading">Utvalda Artiklar</h2>
        
@@ -381,9 +381,71 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
         
     </section>
+-->
 
+<section class="article-carousel" id="article-carousel">
+    <h2 class="section-heading">Utvalda Artiklar</h2>
+   
+    <!-- Swiper-container för karusellen -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Varje artikel är en swiper-slide -->
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/link-thumbnail-100.jpg" alt="Närbild på kedja">
+                <h3>Effektiva backlink-strategier för att öka din SEO-ranking</h3>
+                <p>Backlinks är en viktig del av SEO och kan hjälpa din webbplats att ranka högre i sökresultaten och därmed öka din trafik.</p>
+                <a href="/blogginlägg/backlink-strategier.html" class="read-more">Läs mer</a>
+            </div>
 
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/computer-thumbnail.jpg" alt="Närbild på dator med kod">
+                <h3>Så här snabbar du upp din webbplats: 10 praktiska tips</h3>
+                <p>En snabb webbplats är inte bara viktig för att hålla dina besökare nöjda, utan den spelar också roll för din SEO-ranking.</p>
+                <a href="/blogginlägg/snabb-webbplats.html" class="read-more">Läs mer</a>
+            </div>
 
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/color-theory-100.jpg" alt="Färgteori bild">
+                <h3>Färgpsykologi: Så väljer du färger som ökar försäljningen</h3>
+                <p>Upptäck hur rätt färger kan påverka dina kunders beteende och öka konverteringarna för ditt varumärke.</p>
+                <a href="/blogginlägg/color-theory.html" class="read-more">Läs mer</a>
+            </div>
+            
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/ai.jpg" alt="3D-rendering av adobe illustrator logga">
+                <h3>Vektorisering: Gör din logotyp redo för alla sammanhang</h3>
+                <p>En vektorlogga gör att din design alltid ser bra ut, oavsett om den är på en penna eller en jättestor skylt.</p>
+                <a href="/blogginlägg/vektorisering-logga.html" class="read-more">Läs mer</a>
+            </div>
+    
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/work-1-100.jpg" alt="Dator på skrivbord">
+                <h3>Logotyp vs. Grafisk Profil: Vilket behöver ditt företag mest?</h3>
+                <p>Ta reda på varför ditt varumärke behöver både en stark logotyp och en enhetlig grafisk profil för långsiktig framgång.</p>
+                <a href="/blogginlägg/logotyp-vs-grafiskprofil.html" class="read-more">Läs mer</a>
+            </div>
+    
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/seo-1-100.jpg" alt="Artikel 3">
+                <h3>SEO-Grunder: Så rankar du högre på Google med enkla knep</h3>
+                <p>Lär dig grundläggande SEO-tekniker som kan förbättra din synlighet på Google och locka fler kunder till din webbplats.</p>
+                <a href="/blogginlägg/seo-grunder.html" class="read-more">Läs mer</a>
+            </div>
+
+            <div class="swiper-slide article-card">
+                <img src="/bilder/blogg-thumbnails/phone-1.jpg" alt="Iphone som hålls">
+                <h3>Responsiv Webbdesign: Därför måste din sajt fungera på mobilen</h3>
+                <p>Missa inte mobila användare! Här är allt du behöver veta för att din webbplats ska se bra ut på alla enheter.</p>
+                <a href="/blogginlägg/responsiv-design.html" class="read-more">Läs mer</a>
+            </div>
+        </div>
+        <!-- Paginering och navigering -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+  
 
 
     <footer class="footer">
@@ -423,6 +485,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
         </div>
       </footer>
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="/script.js"></script>
 <script src="/faq-script.js"></script>
 </body>
